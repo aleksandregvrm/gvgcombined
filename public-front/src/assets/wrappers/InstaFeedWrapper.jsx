@@ -1,4 +1,4 @@
-import styled,{keyframes} from "styled-components";
+import styled, { keyframes } from "styled-components";
 
 const animatedButton = keyframes`
   0%{
@@ -41,7 +41,6 @@ const Wrapper = styled.article`
     height: 309px;
     overflow: hidden;
     justify-content: center;
-    /* gap: 0.5rem; */
   }
   .instagram-images div {
     width: 100%;
@@ -49,7 +48,7 @@ const Wrapper = styled.article`
     height: 309px;
     position: relative;
   }
-  .instagram-images video{
+  .instagram-images video {
     width: 309px;
   }
   .instagram-img {

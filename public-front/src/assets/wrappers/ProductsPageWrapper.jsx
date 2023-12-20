@@ -1,4 +1,4 @@
-import styled,{keyframes} from "styled-components";
+import styled, { keyframes } from "styled-components";
 
 const animatedCategory = keyframes`
   0%{
@@ -10,7 +10,7 @@ const animatedCategory = keyframes`
   100%{
     opacity: 1;
   }
-`
+`;
 const Wrapper = styled.section`
   /* Category  */
   .categories {
@@ -97,14 +97,18 @@ const Wrapper = styled.section`
       height: 180px;
       padding: 20px 0;
       padding-top: 70px;
-      justify-content: space-around;
+      justify-content: space-evenly;
       align-items: center;
     }
     .company-images img {
       opacity: 0.5;
       object-fit: contain;
-      height: 6rem;
+      height: 7rem;
       width: 12rem;
+    }
+    .align-image {
+      /* margin-right: 1rem; */
+      margin-left: 1rem;
     }
     /* end */
     /* Category */
@@ -128,7 +132,6 @@ const Wrapper = styled.section`
       padding: 0 1rem;
       display: flex;
       flex-direction: column;
-      /* align-items: center; */
     }
     /* end  */
     /* Downloads */

@@ -13,7 +13,7 @@ const SubscribeEmail = () => {
   const dispatch = useDispatch();
   const emailHandler = (e) => {
     e.preventDefault();
-    subscribeEmail(userEmail.email);
+    subscribeEvent(userEmail.email);
     dispatch(subscribeEmail({ email: userEmail.email }));
   };
   return (

@@ -4,17 +4,14 @@ const Wrapper = styled.main`
   min-height: 800px;
   padding: 1rem;
   padding-bottom: 3rem;
-  /* margin-top: 2rem; */
-  /* margin-bottom: 3rem; */
   margin-bottom: -3rem;
   background: var(--clr-grey-200);
-  .questions-section{
+  .questions-section {
     padding: 2rem 0;
-    /* max-width: 800px; */
     margin: 0 auto;
     border-radius: 1.5rem;
   }
-  .questions-header{
+  .questions-header {
     text-align: center;
     margin-bottom: 1.5rem;
   }
@@ -25,7 +22,6 @@ const Wrapper = styled.main`
     box-shadow: var(--shadow-3);
     margin-bottom: 2rem;
   }
-
   .question p {
     line-height: 2;
     margin-top: 1rem;
