@@ -1,4 +1,4 @@
-const questions = [
+const questionsGe = [
   {
     id: 1,
     title: "რა ტიპის პროდუქტი შეიძლება მოთავსდეს ვენდინგ აპარატში?",
@@ -49,7 +49,62 @@ const questions = [
   {
     id: 10,
     title: "შემიძლია ვიქირავო ან ვიყიდო ვენდინგ აპარატი?",
-    info: "ჩვენ არ ვყიდით ვენდინგ აპარატს, მაგრამ შეგიძლიათ იქირავოთ, ან დადგათ იჯარით."
-  }
+    info: "ჩვენ არ ვყიდით ვენდინგ აპარატს, მაგრამ შეგიძლიათ იქირავოთ, ან დადგათ იჯარით.",
+  },
 ];
-export default questions;
+const questionsEng = [
+  {
+    id: 1,
+    title: "Which types of products can be accommodated in vending apparatus?",
+    info: "Snacks, beverages, desserts and confectionery items, fresh fruits, energy drinks, carbonated beverages, bottled water (regular, flavored, mineral), snack nuts, personal care items, disinfectant supplies, sanitary facilities, contraceptive care, and any other non-flammable products.",
+  },
+  {
+    id: 2,
+    title:
+      "Is it possible to accommodate products according to our company's needs?",
+    info: "Georgian Vending Group collaborates with 150+ brands. You can choose from our partners or request a specific brand, and our team will evaluate the possibility.",
+  },
+  {
+    id: 3,
+    title: "Which payment options are available in the machines?",
+    info: "Cash (coins and bills), smart cards (RFID), including Apple Pay, Google Pay, credit/debit cards.",
+  },
+  {
+    id: 4,
+    title: "What advantage does a vending machines have?",
+    info: "Selected assortment of products. No human contact. 24/7 accessibility. Increased productivity of employees and users. Cash handling. Operator and user safety and security.",
+  },
+  {
+    id: 5,
+    title:
+      "What will be our duties after the installation of the vending machine?",
+    info: "Fulfillment of contractual obligations.",
+  },
+  {
+    id: 6,
+    title: "How much space is required for a vending machine?",
+    info: "It depends on the type of machine you choose. As a rule of thumb goes, it occupies 1-1.5 square meter.",
+  },
+  {
+    id: 7,
+    title: "How much energy does the vending machine consume?",
+    info: "Approximately several kilowatts per day for an average-sized machine and around 1.5 kilowatts per day for a coffee machine.",
+  },
+  {
+    id: 8,
+    title:
+      "What are the requirements to install a vending machine at my facility?",
+    info: "We collaborate with large organizations where the number of employees exceeds 70. However, we also have experience with smaller organizations and discuss requirements based on individual circumstances.",
+  },
+  {
+    id: 9,
+    title: "Where should the vending machines be installed or placed?",
+    info: "Since the vending machine provides additional comfort for users, it is preferable to be installed in places where people work or spend time. Typically, it is installed in various locations such as break rooms, cafeterias, main entrances/exits, and communal areas.",
+  },
+  {
+    id: 10,
+    title: "Can I rent or purchase a vending machine?",
+    info: "We do not sell vending machines, but you can either rent it or negotiate a deal with us.",
+  },
+];
+export { questionsGe, questionsEng };

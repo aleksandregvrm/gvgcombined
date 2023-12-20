@@ -7,7 +7,7 @@ import {
   handleChange,
   toastStyles,
 } from "./helper/helperFunctions";
-import questions from "./questionsData";
+import { questionsGe, questionsEng } from "./questionsData";
 import {
   addUserToLocalStorage,
   removeUserFromLocalStorage,
@@ -29,5 +29,6 @@ export {
   addUserToLocalStorage,
   removeUserFromLocalStorage,
   getUserFromLocalStorage,
-  questions,
+  questionsGe,
+  questionsEng,
 };

@@ -43,7 +43,7 @@ const Products = () => {
                       detailsEvent(category,name);
                     }}
                   >
-                    {!english ? "დეტალები..." : "Details"}
+                    {!english ? "დეტალები..." : "Details..."}
                   </button>
                 </div>
                 <div className="buttons-container">

@@ -1,24 +1,40 @@
-import Wrapper from '../assets/wrappers/FaqWrapper';
-import { SingleQuestion } from '../components';
-import { questions } from '../utils';
+import Wrapper from "../assets/wrappers/FaqWrapper";
+import { useSelector } from "react-redux";
+import { SingleQuestion } from "../components";
+import { questionsGe, questionsEng } from "../utils";
 
 const Faq = () => {
+  const { english } = useSelector((store) => store.menu);
   return (
     <Wrapper>
       <section className="questions-section">
         <div className="questions-header">
-          <h2 className='ge'>ხშირად დასმული კითხვები</h2>
+          <h2 className="ge">
+            {english ? "Frequently asked questions" : "ხშირად დასმული კითხვები"}
+          </h2>
         </div>
         <div className="questions">
-          {questions.map((question) => {
-            return (
-              <SingleQuestion key={question.id} {...question}></SingleQuestion>
-            );
-          })}
+          {english
+            ? questionsEng.map((question) => {
+                return (
+                  <SingleQuestion
+                    key={question.id}
+                    {...question}
+                  ></SingleQuestion>
+                );
+              })
+            : questionsGe.map((question) => {
+                return (
+                  <SingleQuestion
+                    key={question.id}
+                    {...question}
+                  ></SingleQuestion>
+                );
+              })}
         </div>
       </section>
     </Wrapper>
   );
-}
+};
 
-export default Faq
+export default Faq;
