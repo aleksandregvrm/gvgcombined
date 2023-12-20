@@ -1,20 +1,21 @@
 import { useState } from "react";
-import { useDispatch,useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 import { subscribeEmail } from "../features/user/userSlice";
 import { handleChange } from "../utils";
+import { subscribeEvent } from "../facebook-pixel/FacebookFunctions";
 
 const SubscribeEmail = () => {
-  const {isLoading} = useSelector((store)=>store.user);
-  const {english} = useSelector((store)=>store.menu);
-    const [userEmail,setProductValues] = useState({email:""});
-    const dispatch = useDispatch();
-    const emailHandler = (e) => {
-      e.preventDefault();
-      fbq("track", "Purchase", { currency: "USD", value: 30.0 });
-      dispatch(subscribeEmail({email:userEmail.email}));
-    }
+  const { isLoading } = useSelector((store) => store.user);
+  const { english } = useSelector((store) => store.menu);
+  const [userEmail, setProductValues] = useState({ email: "" });
+  const dispatch = useDispatch();
+  const emailHandler = (e) => {
+    e.preventDefault();
+    subscribeEmail(userEmail.email);
+    dispatch(subscribeEmail({ email: userEmail.email }));
+  };
   return (
     <div className="subscribe">
       <div className="subscribe-container">
@@ -27,15 +28,20 @@ const SubscribeEmail = () => {
               required
               name="email"
               id="email"
-              onChange={(e)=>handleChange({ setProductValues, e})}
+              onChange={(e) => handleChange({ setProductValues, e })}
             />
             <label htmlFor="email">
               <FontAwesomeIcon className="letterbox" icon={faEnvelope} />
             </label>
           </div>
           <div className="underline subscribe-underline"></div>
-          <button onClick={emailHandler} type="submit" className="btn subscribe-btn" disabled={isLoading}>
-            {!english ? 'გამოწერა' : 'Subscribe'}
+          <button
+            onClick={emailHandler}
+            type="submit"
+            className="btn subscribe-btn"
+            disabled={isLoading}
+          >
+            {!english ? "გამოწერა" : "Subscribe"}
           </button>
         </form>
       </div>
