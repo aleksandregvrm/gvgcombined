@@ -94,6 +94,7 @@ const ContactInfo = ({forContacts}) => {
           {!forContacts ? (
             <NavLink
               className="animated-contact-text under-text"
+              target="_blank"
               to="/contacts"
             >
               office@geovending.ge

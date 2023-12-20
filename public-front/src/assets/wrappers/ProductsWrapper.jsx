@@ -48,7 +48,7 @@ const Wrapper = styled.section`
   /* products Error end */
   /* products */
   .products-container {
-    margin: 0 auto;
+    margin: 2rem auto;
     width: 95%;
     display: flex;
     flex-direction: column;
