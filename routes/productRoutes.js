@@ -21,7 +21,7 @@ router.route("/uploadImage").post(authenticateUser,uploadImage);
 router.route("/instagram").get(getInstagram);
 router
   .route("/:id")
-  .post(createUserLimiter(twelveHours,4),submitLikeProduct)
+  .post(createUserLimiter(twelveHours,3),submitLikeProduct)
   .patch(authenticateUser,updateProduct)
   .delete(authenticateUser,deleteProduct);
 
