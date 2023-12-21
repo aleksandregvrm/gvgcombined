@@ -20,5 +20,8 @@ export const detailsEvent = (category, name) => {
   });
 };
 export const subscribeEvent = (email) => {
-  fbq("trackCustom", "subscribed", { content_name: email });
+  fbq("trackCustom", "subscribed", {
+    content_type: "Subscribe-event",
+    content_name: email,
+  });
 };
