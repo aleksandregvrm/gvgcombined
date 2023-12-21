@@ -103,12 +103,13 @@ const Wrapper = styled.section`
     .company-images img {
       opacity: 0.5;
       object-fit: contain;
-      height: 7rem;
+      height: 6rem;
       width: 12rem;
+      /* border: 2px solid red; */
     }
     .align-image {
       /* margin-right: 1rem; */
-      margin-left: 1rem;
+      margin-left: 1.2rem;
     }
     /* end */
     /* Category */
