@@ -21,7 +21,7 @@ export const detailsEvent = (category, name) => {
 };
 export const subscribeEvent = (email) => {
   fbq("trackCustom", "subscribed", {
-    content_type: "Subscribe-event",
+    content_type: "subscribe-event",
     content_name: email,
   });
 };
