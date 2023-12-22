@@ -20,8 +20,10 @@ export const detailsEvent = (category, name) => {
   });
 };
 export const subscribeEvent = (email) => {
+  const emailArr = [...email];
+  const filteredEmail = emailArr.filter((char) => char !== "@").join("");
   fbq("trackCustom", "subscribed", {
-    content_type: "subscribe-event",
-    content_name: email,
+    content_type: "Subscribe-event",
+    content_name: filteredEmail,
   });
 };
