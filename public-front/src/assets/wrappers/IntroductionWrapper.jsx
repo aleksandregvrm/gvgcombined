@@ -1,13 +1,10 @@
-import styled,{keyframes} from "styled-components";
+import styled, { keyframes } from "styled-components";
 
 export const Wrapper = styled.section`
   .introduction-img {
     width: 100%;
     height: 100%;
     object-fit: contain;
-  }
-  .img-container {
-    /* height: 60vh; */
   }
   .dots-container {
     margin-top: 1rem;
@@ -32,6 +29,9 @@ export const Wrapper = styled.section`
   }
   @media screen and (min-width: 980px) {
     min-height: 105vh;
+    .introduction-text {
+      display: none;
+    }
     h2 {
       text-align: center;
     }
@@ -44,7 +44,6 @@ export const Wrapper = styled.section`
     }
   }
 `;
-
 const loadingAnimationImage = keyframes`
   0%{
     opacity: 0;
@@ -55,7 +54,7 @@ const loadingAnimationImage = keyframes`
   100%{
     opacity: 1;
   }
-`
+`;
 export const AnimatedImage = styled.img`
-  animation:${loadingAnimationImage} linear 1.2s;
-`
+  animation: ${loadingAnimationImage} linear 1.2s;
+`;
