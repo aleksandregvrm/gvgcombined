@@ -9,7 +9,7 @@ const Faq = () => {
     <Wrapper>
       <section className="questions-section">
         <div className="questions-header">
-          <h2 className={english ? "" : "ge"}>
+          <h2>
             {english ? "Frequently asked questions" : "ხშირად დასმული კითხვები"}
           </h2>
         </div>
@@ -36,5 +36,4 @@ const Faq = () => {
     </Wrapper>
   );
 };
-
 export default Faq;

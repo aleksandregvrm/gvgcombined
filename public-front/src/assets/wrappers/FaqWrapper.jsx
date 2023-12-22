@@ -37,7 +37,7 @@ const Wrapper = styled.main`
     gap: 1rem;
   }
   .question h4 {
-    font-weight: 500;
+    font-weight: 300;
     line-height: 1.5;
   }
   .question-btn {
