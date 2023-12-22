@@ -25,6 +25,7 @@ const Wrapper = styled.main`
   .question p {
     line-height: 2;
     margin-top: 1rem;
+    font-weight: 500;
     background: var(--primary-white);
     padding: 1rem;
     border-radius: 1rem;

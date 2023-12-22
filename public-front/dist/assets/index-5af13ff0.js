@@ -2614,6 +2614,7 @@ width: 90%;
   .question p {
     line-height: 2;
     margin-top: 1rem;
+    font-weight: 500;
     background: var(--primary-white);
     padding: 1rem;
     border-radius: 1rem;
