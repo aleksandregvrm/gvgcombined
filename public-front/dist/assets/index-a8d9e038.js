@@ -2642,7 +2642,7 @@ width: 90%;
     align-self: flex-start;
     min-width: 2rem;
   }
-`,yP=()=>{const{english:e}=K(t=>t.menu);return f.jsx(vP,{children:f.jsxs("section",{className:"questions-section",children:[f.jsx("div",{className:"questions-header",children:f.jsx("h2",{className:"ge",children:e?"Frequently asked questions":"ხშირად დასმული კითხვები"})}),f.jsx("div",{className:"questions",children:e?R5.map(t=>f.jsx(m0,{...t},t.id)):O5.map(t=>f.jsx(m0,{...t},t.id))})]})})},xP=({children:e})=>{const{user:t}=K(n=>n.user);return t?e:f.jsx(V4,{to:"/"})},qc=Ye.section`
+`,yP=()=>{const{english:e}=K(t=>t.menu);return f.jsx(vP,{children:f.jsxs("section",{className:"questions-section",children:[f.jsx("div",{className:"questions-header",children:f.jsx("h2",{className:e?"":"ge",children:e?"Frequently asked questions":"ხშირად დასმული კითხვები"})}),f.jsx("div",{className:"questions",children:e?R5.map(t=>f.jsx(m0,{...t},t.id)):O5.map(t=>f.jsx(m0,{...t},t.id))})]})})},xP=({children:e})=>{const{user:t}=K(n=>n.user);return t?e:f.jsx(V4,{to:"/"})},qc=Ye.section`
   height: 700px;
   display: flex;
   width: 100%;

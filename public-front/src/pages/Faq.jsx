@@ -9,7 +9,7 @@ const Faq = () => {
     <Wrapper>
       <section className="questions-section">
         <div className="questions-header">
-          <h2 className="ge">
+          <h2 className={english ? "" : "ge"}>
             {english ? "Frequently asked questions" : "ხშირად დასმული კითხვები"}
           </h2>
         </div>
