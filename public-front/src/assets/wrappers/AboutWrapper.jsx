@@ -24,7 +24,6 @@ const Wrapper = styled.section`
   .about-paragraph {
     margin-top: 1rem;
     padding: 1rem;
-    border: 2px solid red;
   }
   .about-paragraph p {
     font-weight: 200;
