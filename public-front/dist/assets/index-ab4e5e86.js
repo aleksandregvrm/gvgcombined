@@ -320,7 +320,7 @@ Error generating stack: `+a.message+`
       width: 113px;
     }
     .download-slide {
-      height: 105px;
+      height: 112px;
       width: 125px;
     }
   }
@@ -334,7 +334,7 @@ Error generating stack: `+a.message+`
       overflow: hidden;
       margin: 0 auto;
     }
-    .slide{
+    .slide {
       height: 112px;
       width: 141px;
     }

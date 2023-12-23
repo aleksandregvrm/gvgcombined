@@ -115,7 +115,7 @@ const Wrapper = styled.section`
       width: 113px;
     }
     .download-slide {
-      height: 105px;
+      height: 112px;
       width: 125px;
     }
   }
@@ -129,7 +129,7 @@ const Wrapper = styled.section`
       overflow: hidden;
       margin: 0 auto;
     }
-    .slide{
+    .slide {
       height: 112px;
       width: 141px;
     }
