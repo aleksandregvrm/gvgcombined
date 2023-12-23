@@ -24,6 +24,10 @@ const Wrapper = styled.section`
   .about-paragraph {
     margin-top: 1rem;
     padding: 1rem;
+    border: 2px solid red;
+  }
+  .about-paragraph p {
+    font-weight: 200;
   }
   .about-box {
     display: flex;
@@ -42,7 +46,6 @@ const Wrapper = styled.section`
   @media screen and (min-width: 980px) {
     min-height: 105vh;
     padding-top: 1rem;
-    /* padding-bottom: 3rem; */
     /* numeric stats */
     .about-stats {
       height: calc(100vh - 660px);
@@ -83,9 +86,6 @@ const Wrapper = styled.section`
       align-items: center;
     }
     /* end */
-    /* instagram */
-
-    /* end  */
   }
 `;
 export default Wrapper;

@@ -1934,6 +1934,10 @@ width: 90%;
   .about-paragraph {
     margin-top: 1rem;
     padding: 1rem;
+    border: 2px solid red;
+  }
+  .about-paragraph p {
+    font-weight: 200;
   }
   .about-box {
     display: flex;
@@ -1952,7 +1956,6 @@ width: 90%;
   @media screen and (min-width: 980px) {
     min-height: 105vh;
     padding-top: 1rem;
-    /* padding-bottom: 3rem; */
     /* numeric stats */
     .about-stats {
       height: calc(100vh - 660px);
@@ -1993,9 +1996,6 @@ width: 90%;
       align-items: center;
     }
     /* end */
-    /* instagram */
-
-    /* end  */
   }
 `,J8="/assets/aboutpic-d6bd4bcd.png",X8=()=>{const{english:e}=K(n=>n.menu),t=fe();return k.useEffect(()=>{t(Vs())},[]),f.jsxs(K8,{children:[f.jsxs("div",{className:"about-box",children:[f.jsx("div",{className:"about-paragraph ge",children:e?f.jsx("p",{children:"Georgian Vending Group is the official representative of the Spanish company Azykoen in Georgia. (Azykoen is a leading manufacturer of vending machines worldwide) Our mission is to provide daily comfort and accessibility to local businesses, large and public offices, by delivering high-quality, multifunctional vending machines for their business and operations. We assist partners in establishing vibrant communities that create positive relationships, build, and enhance comfort, increase product diversity, and contribute to the efficiency of their business and production. We value creating partnerships with dynamic organizations that focus on establishing positive connections, generating growth, and promoting comfort. We believe that we can quickly and easily deliver food, beverages, and other related product categories to any sector, meaning that we can serve both large and small organizations"}):f.jsxs("p",{children:["Georgian Vending Group ესპანური კომპანია Azykoen-ის ოფიციალური წარმომადგენელია საქართველოში. (Azykoen - სავაჭრო აპარატების ერთ-ერთი უძლიერესი მწარმოებელი მსოფლიოში) ",f.jsx("br",{})," ჩვენი მისიაა ყოველდღიური კომფორტის ხელმისაწვდომობის მიზნით ადგილობრივ ბიზნესებს, კერძო და სახელმწიფო ოფისებს, მივაწოდოთ საუკეთესო ხარისხის, მრავალფუნქციური, მათ ბიზნესზე და საქმისწარმოებაზე მორგებული სავაჭრო აპარატები. ",f.jsx("br",{})," ჩვენ ვეხმარებით პარტნიორებს ისეთი ცოცხალი კუთხეების მოწყობაში, რომლებიც ქმნის პოზიტიურ კავშირებს, ამყარებს და აძლიერებს კომფორტს, ზრდის პროდუქტიულობას და იწვევს კმაყოფილებას ",f.jsx("br",{})," ჩვენ ვამაყობთ რომ შეგვიძლია სწრაფად და მარტივად მივაწოდოთ საკვები, სასმელი და სხვა დაკავშირებული კატეგორიების პროდუქტი ნებისმიერ სექტორს, რაც ნიშნავს რომ შეგვიძლია მოვუაროთ როგორც მსხვილ, ისე მცირე ორგანიზაციებს."]})}),f.jsx("div",{className:"about-img",children:f.jsx("img",{srcSet:J8,alt:""})})]}),f.jsxs("div",{className:"about-stats ge",children:[f.jsxs("div",{className:"info",children:[f.jsx("h1",{className:"big",children:"450"}),e?f.jsx("h2",{children:"Machines"}):f.jsxs("span",{children:[f.jsx("h4",{children:"- მდე "})," ",f.jsx("h2",{children:"აპარატი"})]}),f.jsx("div",{className:"underline"})]}),f.jsxs("div",{className:"info",children:[f.jsx("h1",{className:"big",children:"180"}),e?f.jsx("h2",{children:"Partners"}):f.jsxs("span",{children:[f.jsx("h4",{children:"- მდე "})," ",f.jsx("h2",{children:"პარტნიორი"})]}),f.jsx("div",{className:"underline"})]}),f.jsxs("div",{className:"info",children:[f.jsx("h1",{className:"big",children:"6"}),e?f.jsx("h2",{children:"Cities"}):f.jsx("span",{children:f.jsx("h2",{children:"ქალაქი"})}),f.jsx("div",{className:"underline"})]})]}),f.jsx(C8,{})]})},Z8=Ye.section`
   margin-top: 2rem;
