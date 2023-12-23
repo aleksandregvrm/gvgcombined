@@ -8,7 +8,7 @@ const links = [
     hoverTrigger: true,
   },
   { id: 3, url: "service", text: "service", textGe: "სერვისი" },
-  { id: 4, url: "about", text: "about us", textGe: "ჩვენს შესახებ" },
+  { id: 4, url: "about", text: "about us", textGe: "ჩვენ შესახებ" },
   { id: 5, url: "contacts", text: "contact us", textGe: "კონტაქტი" },
 ];
 const additionalLinks = [
@@ -33,5 +33,4 @@ const additionalLinks = [
     to: "products/snacks-and-ingredients",
   },
 ];
-
 export { links, additionalLinks };

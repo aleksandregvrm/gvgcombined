@@ -1,6 +1,6 @@
 :root {
-  font-family: 'Oswald', sans-serif;
-  font-family: 'Poppins', sans-serif;
+  /* font-family: 'Oswald', sans-serif;
+  font-family: 'Poppins', sans-serif; */
   line-height: 1.5;
   font-weight: 700;
   color-scheme: light dark;
@@ -49,8 +49,7 @@ body {
   min-height: 100vh;
   color: var(--primary-black);
   background: var(--primary-white);
-  font-family: 'Poppins',
-    sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 .div {
   color: var(--primary-black);
@@ -90,6 +89,7 @@ img {
 .section-center {
   margin: 0 auto;
   background: var(--primary-white);
+  font-family: inherit;
 }
 .section-center .language {
   position: fixed;

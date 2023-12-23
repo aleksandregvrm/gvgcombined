@@ -134,6 +134,9 @@ const Wrapper = styled.section`
       display: flex;
       flex-direction: column;
     }
+    .money-slides-container h4 {
+      font-weight: 600;
+    }
     /* end  */
     /* Downloads */
     .download {
@@ -152,5 +155,4 @@ const Wrapper = styled.section`
     /* end */
   }
 `;
-
 export default Wrapper;

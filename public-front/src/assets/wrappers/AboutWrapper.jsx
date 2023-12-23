@@ -47,7 +47,6 @@ const Wrapper = styled.section`
     .about-stats {
       height: calc(100vh - 660px);
       padding: 4rem;
-      /* padding-top: 1rem; */
       flex-direction: row;
       justify-content: center;
     }

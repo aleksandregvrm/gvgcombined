@@ -35,7 +35,7 @@ const Wrapper = styled.nav`
   /* Links small */
   .links a {
     color: var(--primary-black);
-    font-size: 1.3rem;
+    font-size: 1.25rem;
     text-transform: capitalize;
     letter-spacing: var(--spacing);
     display: block;
@@ -89,7 +89,7 @@ const Wrapper = styled.nav`
       justify-content: space-between;
       align-items: flex-start;
     }
-    .faq{
+    .faq {
       display: flex;
       align-items: flex-start;
       height: 1.5rem;
@@ -98,7 +98,7 @@ const Wrapper = styled.nav`
     .faq p {
       font-size: 0.9rem;
       font-weight: 900;
-      &:hover{
+      &:hover {
         color: yellow;
         transition: var(--transition);
       }
@@ -114,14 +114,14 @@ const Wrapper = styled.nav`
 
     /* end */
     /* Language */
-    .language{ 
+    .language {
       display: flex;
       cursor: pointer;
     }
-    .language-text{
+    .language-text {
       color: var(--primary-white);
     }
-    .active-language{
+    .active-language {
       color: var(--primary-Company-red);
     }
     /* Language end */
@@ -245,10 +245,9 @@ const Wrapper = styled.nav`
     .links-container {
       width: 60%;
     }
-    .links{
+    .links {
       justify-content: space-around;
     }
   }
 `;
-
 export default Wrapper;

@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import { Wrapper } from "../assets/wrappers/IntroductionWrapper";
 import { useSelector } from "react-redux";
 import IntroductionImages from "./IntroductionImages";
@@ -12,7 +13,6 @@ const Introduction = () => {
     <Wrapper>
       <div className="introduction">
         <IntroductionImages />
-        <ProductsCarousel images={carouselImages} atHome={atHome} />
         <div className="introduction-text">
           {!english ? (
             <p>
@@ -49,6 +49,19 @@ const Introduction = () => {
               large and small organizations
             </p>
           )}
+        </div>
+        <ProductsCarousel images={carouselImages} atHome={atHome} />
+        <div className="introduction-products">
+          {english ? (
+            <h2>Check out our products</h2>
+          ) : (
+            <h2>დაათვალიერეთ ჩვენი პროდუქტები</h2>
+          )}
+          <NavLink to="/products">
+            <button className="btn products-btn">
+              {english ? "Products" : "პროდუქტები"}
+            </button>
+          </NavLink>
         </div>
       </div>
     </Wrapper>

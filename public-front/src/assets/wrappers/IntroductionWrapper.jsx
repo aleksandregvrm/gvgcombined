@@ -27,6 +27,25 @@ export const Wrapper = styled.section`
     padding: 1rem;
     margin-top: 3rem;
   }
+  .introduction-text p {
+    font-weight: 300;
+  }
+  .introduction-products {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+    margin-bottom: 6rem;
+  }
+  .products-btn {
+    background: var(--primary-Company-red);
+    font-size: 1.8rem;
+    padding: 1rem 1.5rem;
+    border-radius: 0;
+    width: 100vw;
+  }
   @media screen and (min-width: 980px) {
     min-height: 105vh;
     .introduction-text {

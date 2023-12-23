@@ -10,9 +10,7 @@ const SingleProduct = () => {
   const { backgroundIsActive, activeProduct } = useSelector(
     (state) => state.products
   );
-  const { english } = useSelector(
-    (state) => state.menu
-  );
+  const { english } = useSelector((state) => state.menu);
   const dispatch = useDispatch();
   return (
     <Wrapper>
@@ -27,18 +25,28 @@ const SingleProduct = () => {
           <img srcSet={activeProduct.image} alt="" />
         </div>
         <div className="text-container">
-          <h2>{activeProduct.category !== 'service' &&activeProduct.name}</h2>
-          {!activeProduct.price ? "" : <h3>{!english ? "ფასი :" : "Price :"} {formatPrice(activeProduct.price)}</h3>}
-          {!activeProduct.stock ? (
-            ''
+          <h2>{activeProduct.category !== "service" && activeProduct.name}</h2>
+          {!activeProduct.price ? (
+            ""
           ) : (
-            <h3>{!english ? "მარაგშია : " : "Stock : "}{activeProduct.stock}</h3>
+            <h3>
+              {!english ? "ფასი :" : "Price :"}{" "}
+              {formatPrice(activeProduct.price)}
+            </h3>
           )}
-          {!english ? 
-          <p className="ge">{activeProduct.descriptionGe}</p> 
-          :
-          <p>{activeProduct.description}</p>
-          }
+          {!activeProduct.stock ? (
+            ""
+          ) : (
+            <h3>
+              {!english ? "მარაგშია : " : "Stock : "}
+              {activeProduct.stock}
+            </h3>
+          )}
+          {!english ? (
+            <p className="ge">{activeProduct.descriptionGe}</p>
+          ) : (
+            <p className="ge">{activeProduct.description}</p>
+          )}
           <p>{activeProduct.additionalInfo}</p>
         </div>
       </div>

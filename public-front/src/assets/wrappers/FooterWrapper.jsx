@@ -8,14 +8,13 @@ const Wrapper = styled.footer`
     background: var(--primary-black);
     margin-top: 4rem;
     display: flex;
-    flex-direction: column;
     align-items: center;
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: flex-start;
     padding: 1rem;
-    padding-top: 3rem;
+    padding-top: 2rem;
     max-width: 1260px;
     margin: 0 auto;
     gap: 1rem;
@@ -65,7 +64,7 @@ const Wrapper = styled.footer`
   }
   /* company images */
   .company-images {
-    margin: 2.5rem auto;
+    margin: 1.5rem auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
@@ -99,7 +98,7 @@ const Wrapper = styled.footer`
   }
   .animated-contact-text {
     position: relative;
-    font-weight: 400;
+    font-weight: 300;
     @media screen and (min-width: 890px) {
       &::after {
         content: "";
