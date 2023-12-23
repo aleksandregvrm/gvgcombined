@@ -140,6 +140,9 @@ Error generating stack: `+a.message+`
   }
   @media screen and (min-width: 980px) {
     min-height: 105vh;
+    .introduction-products {
+      display: none;
+    }
     .introduction-text {
       display: none;
     }
