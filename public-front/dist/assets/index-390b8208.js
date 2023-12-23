@@ -137,6 +137,7 @@ Error generating stack: `+a.message+`
     padding: 1rem 1.5rem;
     border-radius: 0;
     width: 100vw;
+    color: var(--primary-black);
   }
   @media screen and (min-width: 980px) {
     min-height: 105vh;
